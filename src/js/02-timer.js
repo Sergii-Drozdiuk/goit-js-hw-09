@@ -52,7 +52,7 @@ elem.startBtn.addEventListener("click", () => {
          Notify.success('Congratulations. Discounts are active');
       }
   }, 1000);
-});
+}, { once: true });
 
 function convertMs(ms) {
   const second = 1000;
