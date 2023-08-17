@@ -10,7 +10,6 @@ function createPromise(position, delay) {
       }
     }, delay);
   });
-  console.log(Promise);
 };
    
 form.addEventListener('submit', (event) => {
