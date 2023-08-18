@@ -41,9 +41,9 @@ function timer(time) {
 };
 
 elem.startBtn.addEventListener("click", () => {
+   elem.input.setAttribute("disabled", "");
+   elem.startBtn.setAttribute("disabled", "");
    const timerId = setInterval(() => {
-      elem.input.setAttribute("disabled", "");
-      elem.startBtn.setAttribute("disabled", "");
       elem.msToEvent -= 1000;
       timer(elem.msToEvent);
       if (elem.msToEvent < 1000) {

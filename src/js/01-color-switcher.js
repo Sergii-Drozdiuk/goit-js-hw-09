@@ -5,10 +5,10 @@ stopBtn.setAttribute("disabled", "")
 let timerId = null;
 
 startBtn.addEventListener("click", () => {
+  startBtn.setAttribute("disabled", "");
+  stopBtn.removeAttribute("disabled");
   timerId = setInterval(() => {
      document.body.style.backgroundColor = getRandomHexColor();
-     startBtn.setAttribute("disabled", "");
-     stopBtn.removeAttribute("disabled");
   }, 1000);
 });
 
